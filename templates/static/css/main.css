@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    font-family: 
+        Helvetica, sans-serif;
+}
+
+.parallax {
+    min-height: 100vh;
+    background: linear-gradient(
+        #333,
+        #111
+    );
+    position: relative;
+    overflow: hidden;
+}
+
+.parallax h1 {
+    margin: 0;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    line-height: 1.4rem;
+
+}
+
+.front-layer, 
+.back-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none,
+}
+
+.front-layer {
+    z-index: 1;
+}
+
+.back-layer {
+    z-index: 0;
+}
+
+.front-layer img,
+.back-layer img {
+    position: absolute;
+
+}
+
+.front-layer img {
+    box-shadow: 
+        0 0 1.5em rgba(0, 0, 0, 0.5);
+    max-width: 220px;
+}
+
+.back-layer img {
+    box-shadow: 
+        0 0 1.5em rgba(0, 0, 0, 0.5);
+    max-width: 380px;
+}
+
+.front-layer img:nth-child(1) {
+    top: 0;
+    left: 20%;
+    width: 16%;
+}
+
+.front-layer img:nth-child(2) {
+    top: 50%;
+    left: 0%;
+    width: 13%;
+}
+
+.front-layer img:nth-child(3) {
+    bottom: 0;
+    left: 40%;
+    width: 14%;
+}
+
+.front-layer img:nth-child(4) {
+    bottom: 0;
+    right: 20%;
+    width: 14%;
+}
+
+.back-layer img:nth-child(1) {
+    top: -10%;
+    right: 10%;
+    width: 30%;
+}
+
+.back-layer img:nth-child(2) {
+    bottom: -10%;
+    right: 20%;
+    width: 32%;
+}
+
+.back-layer img:nth-child(3) {
+    top: -10%;
+    left: 0;
+    width: 34%; 
+}
+
+.back-layer img:nth-child(4) {
+    bottom: 5%;
+    left: 0;
+    width: 15%; 
+}

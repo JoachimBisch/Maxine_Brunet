@@ -1,0 +1,19 @@
+{
+    "landing_page": {
+        "title": "Maxine Brunet",
+        "background_landing_images": {
+            "back_layer": [
+                {"name": "back_image1", "path": "img/BRUNET_Maxine_plan_en_volume_copie.jpg"},
+                {"name": "back_image2", "path": "img/coupe_perspective _habitee.jpg"},
+                {"name": "back_image3", "path": "img/photo_final_maquette_1.jpg"},
+                {"name": "back_image4", "path": "img/IMG_0778.JPG"}
+            ],
+            "front_layer": [
+                {"name": "front_image1", "path": "img/cuisine2_2.jpeg"},
+                {"name": "front_image2", "path": "img/PERSPECTIVE_CEnTRALE copie.jpg"},
+                {"name": "front_image3", "path": "img/photomontage_richelieu_1.png"},
+                {"name": "front_image4", "path": "img/scenario_upgraded.jpg"}
+            ]
+        }
+    }
+}

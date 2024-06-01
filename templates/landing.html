@@ -1,0 +1,29 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maxine Brunet</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+    <script src="{% static 'script/main.js' %}"></script>
+</head>
+<body>
+    <section class="parallax">
+        <h1>
+            Maxine Brunet
+        </h1>
+        <div class="front-layer">
+            {% for image in data.landing_page.background_landing_images.front_layer %}
+                <img src="{% static image.path %}" alt="{{ image.name }}">
+            {% endfor %}
+        </div>
+        <div class="back-layer">
+            {% for image in data.landing_page.background_landing_images.back_layer %}
+                <img src="{% static image.path %}" alt="{{ image.name }}">
+            {% endfor %}
+        </div>
+    </section>
+</body>
+</html>
